@@ -1,0 +1,26 @@
+@(userList : List[User])
+@main("User List"){
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<div class="col-md-2 col-md-offset-5">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <th>Name</th>
+            <th>Age</th>
+            </thead>
+            <tbody>
+            @for(user <- userList) {
+            <tr>
+                <td>@user.name</td>
+                <td>@user.age</td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+}

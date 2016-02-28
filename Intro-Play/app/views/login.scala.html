@@ -1,0 +1,23 @@
+@(userForm:Form[UserData])(implicit message: Messages)
+
+@import helper._
+
+@main("Login Form") {
+
+
+
+<div style="border-style:solid; text-align:center; width:auto; padding-bottom:10px;background-color:#ccc">
+    <h1>Login Form</h1>
+    @helper.form(action = routes.Authorization.submit()) {
+    @helper.inputText(userForm("name"),'_label -> "Name: ",'_showConstraints -> false)
+    @helper.inputPassword(userForm("pass"),'_label -> "Password: ",'_showConstraints -> false)
+    @helper.inputPassword(userForm("age"),'_label -> "Age: ",'_showError -> true)
+    @helper.repeat(userForm("emails"), min = 0) { emailField =>
+        @helper.inputText(emailField)
+    }
+    <input type = "submit" value="Submit">
+    <input type="reset">
+    }
+</div>
+
+}
