@@ -1,0 +1,36 @@
+<html ng-app="studentApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular.js Example</title>
+  <script type="text/javascript" src="https://code.angularjs.org/1.4.0/angular.min.js"></script>
+  <script src="assets/angular-ui-router.min.js"></script>
+
+  <script src=".././app/component/studentApp.module.js"></script>
+  <script src=".././app/component/studentApp.route.js"></script>
+  <script src=".././app/component/list/list.ctrl.js"></script>
+  <script src=".././app/component/list/list.html"></script>
+  <script src=".././app/component/list/list.factory.js"></script>
+
+  <script src=".././app/component/add/add.ctrl.js"></script>
+  <script src=".././app/component/add/add.html"></script>
+  <script src=".././app/component/add/add.factory.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../app/assets/style.css">
+</head>
+
+<body>
+<div class="header">
+  <h1>Welcome to my AngularJS Web App</h1>
+  <h2>Angular JS UI Assignment</h2>
+</div>
+
+
+<div ui-view> </div>
+
+<div class="footer"style="bottom: 0px">
+  <h2>This is my footer</h2>
+  <h3>Copyright</h3>
+</div>
+</body>
+
+</html>

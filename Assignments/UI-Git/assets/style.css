@@ -1,0 +1,83 @@
+body{
+    background-color: whitesmoke;
+}
+.header{
+    width:100%;
+    height: auto;
+    background-color: dimgrey;
+    color: azure;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.header h2{
+    color: greenyellow;
+}
+.footer{
+    width:99%;
+    height: auto;
+    background-color: dimgrey;
+    color: azure;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+}
+.footer h2{
+    color: greenyellow;
+}
+.footer h3{
+    font-style: italic;
+    font-size: xx-small;
+}
+.addDiv{
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+.addDiv h3{
+    color: maroon;
+    display: inline;
+}
+.search{
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+.mainBody{
+    width: 100%;
+    max-height: 300px;
+    border: 2px solid;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+.dataTable{
+    text-align: center;
+    border: 1px solid;
+}
+table th{
+    background-color: yellowgreen;
+    color: white;
+}
+table tr:nth-child(odd) td{
+    background-color: white;
+}
+table tr:nth-child(even) td{
+    background-color: gainsboro;
+}

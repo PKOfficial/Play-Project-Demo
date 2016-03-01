@@ -1,0 +1,23 @@
+<div class="addDiv">
+    <h3>Add New Student</h3> <button ng-click="changeView()">Add New Student</button>
+</div>
+<div class="search">
+    Search:
+    <input ng-model="query" type="text" />
+</div>
+<div class="mainBody">
+
+    <table width="100%" class="dataTable">
+        <tr>
+            <th><a href="" ng-click="sortField ='id'; reverse = !reverse">ID</a></th>
+            <th><a href="" ng-click="sortField = 'name'; reverse = !reverse">Name</a></th>
+            <th><a href="" ng-click="sortField = 'email'; reverse = !reverse">Email</a></th>
+        </tr>
+        <tr ng-repeat="student in studentsList | filter:query | orderBy:sortField:reverse">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+        </tr>
+
+    </table>
+</div>
